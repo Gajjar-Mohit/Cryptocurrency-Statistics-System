@@ -105,3 +105,11 @@ Example:
 ```
 GET /deviation?coin=bitcoin
 ```
+
+
+
+https://github.com/user-attachments/assets/3f6573e3-953e-4247-b213-723a7959fd72
+
+
+
+
