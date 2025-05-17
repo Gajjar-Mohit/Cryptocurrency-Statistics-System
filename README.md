@@ -85,13 +85,13 @@ Example:
 GET /stats?coin=bitcoin
 ```
 
-### GET /stats?trigger=update
+### GET /update?trigger=update
 
 Trigger an immediate update of cryptocurrency statistics.
 
 Example:
 ```
-GET /stats?trigger=update
+GET /update?trigger=update
 ```
 
 ### GET /deviation
