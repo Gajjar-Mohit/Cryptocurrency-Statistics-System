@@ -10,10 +10,6 @@ This project consists of two Node.js servers that work together to collect and e
 ├── worker-server/  # Worker server for triggering data collection
 ```
 
-## Architecture Overview
-
-![Architecture Diagram](https://mermaid.ink/img/pako:eNp1kV1rwjAUhv9KyHVBB7VeddPeKAy2wZiDMXbR5GgDTVLSpFOR_vskrdo53JeH8z55T3ISV0YjS3gmrUsYY5uPGCoU3BHBK9TE8qKoDCF4OGr0gdSE-1WLHaPdvkGuDn5UXFCJH1KuwjiSOvewUvSCKsKONoSiAu98FyXhmcGaC_CeE5tNDKZYnVBxMVDlxXrFCOaOfQSPLI2G6fPTbJrO0nSUjB-ep-kknYyGyYjdhzMhOuuqyMHZHJ5UmZ_v-kLeFrWQNAIoWMGuQFG5w0ZbSXVPqPkX6JCzrGNkpwY36FDwc2MKPnTNnXPZ_D9mPMzQkXLqpVntUCcg8yRJITN2B0-aNbYSQPEPKKTgkHnqvLOoheRXwVrWcDNvfVrZQOb1-BaywwZ5Dfn6G4UWnuU)
-
 ### Components
 
 1. **API Server**:
@@ -48,7 +44,12 @@ Please refer to the README files in the api-server and worker-server directories
 
 1. Start MongoDB:
    ```
-   mongod
+   docker run --name mongodb -d \
+       -p 27017:27017 \
+       -e MONGO_INITDB_ROOT_USERNAME=admin \
+       -e MONGO_INITDB_ROOT_PASSWORD=password \
+       mongo
+
    ```
 
 2. Start NATS:
