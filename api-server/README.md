@@ -28,7 +28,7 @@ npm install
 
 ```
 PORT=3000
-MONGO_URI=mongodb://localhost:27017/crypto-stats
+MONGO_URI=mongodb://admin:password@localhost:27017/yourdatabase?authSource=admin
 NATS_URL=nats://localhost:4222
 NODE_ENV=development
 ```
