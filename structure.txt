@@ -1,0 +1,28 @@
+api-server/
+├── src/
+│   ├── config/
+│   │   └── index.ts
+│   ├── controllers/
+│   │   ├── cryptoController.ts
+│   │   └── index.ts
+│   ├── models/
+│   │   ├── CryptoStats.ts
+│   │   └── index.ts
+│   ├── routes/
+│   │   ├── cryptoRoutes.ts
+│   │   └── index.ts
+│   ├── services/
+│   │   ├── cryptoService.ts
+│   │   ├── natsService.ts
+│   │   └── index.ts
+│   ├── utils/
+│   │   ├── logger.ts
+│   │   └── errorHandler.ts
+│   ├── app.ts
+│   └── server.ts
+├── .env
+├── .gitignore
+├── jest.config.js
+├── package.json
+├── tsconfig.json
+└── README.md

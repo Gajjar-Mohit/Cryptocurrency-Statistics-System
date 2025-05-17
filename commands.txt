@@ -1,0 +1,21 @@
+MongoDB with Authentication
+
+    docker run --name mongodb -d \
+    -p 27017:27017 \
+    -e MONGO_INITDB_ROOT_USERNAME=admin \
+    -e MONGO_INITDB_ROOT_PASSWORD=password \
+    mongo
+
+
+MongoDB Container Setup
+    docker run --name mongodb -d -p 27017:27017 mongo
+
+
+MongoDB with Persistent Data
+    mkdir -p ~/mongodb/data
+
+    # Run MongoDB with a volume mount
+    docker run --name mongodb -d \
+    -p 27017:27017 \
+    -v ~/mongodb/data:/data/db \
+    mongo
